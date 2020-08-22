@@ -15,9 +15,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * 		> @Configuration
  * 		> @Bean
  * 3、@Import
- *      > 任意类 ：beanName 为 全类名
+ *      > @Configuration 类
  * 		> org.springframework.context.annotation.ImportSelector ： beanName 为 全类名
  * 		> org.springframework.context.annotation.ImportBeanDefinitionRegistrar ：beanName 可指定
+ *      > 普通的 component classes 全类名
  * 4、@ComponentScan
  * 		> @Component
  * 		> @Controller

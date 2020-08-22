@@ -27,7 +27,11 @@ public class AnnotationApplication {
 		//ac.refresh();
 
 		// 4、获取bean
-		UserService userService = (UserService) ac.getBean("userService");
+		AnnotationConfig annotationConfig = (AnnotationConfig) ac.getBean("annotationConfig"); // class com.shadow.spring.config.AnnotationConfig$$EnhancerBySpringCGLIB$$5887f5eb
+		UserService userService = (UserService) ac.getBean("userService"); // class com.shadow.spring.service.UserService
+
+		System.out.println(annotationConfig.getClass());
+		System.out.println(userService.getClass());
 
 		userService.hello();
 
